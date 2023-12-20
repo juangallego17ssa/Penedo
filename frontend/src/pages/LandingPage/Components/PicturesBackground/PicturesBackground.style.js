@@ -14,6 +14,8 @@ export const PictureBox = styled.div`
     font-weight: bold;
     font-family: 'Inter', sans-serif;
     position: relative;
+    background-color: gray;
+    z-index:-3;
 
     .singlePictureBox1 {
         width: 20%;
@@ -57,6 +59,50 @@ export const PictureBox = styled.div`
     }
 
 
+    .singlePictureTitleBox{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .singlePictureBoxTitle1 {
+            position: absolute;
+            color: white;
+            width: 75%;
+            font-size: 0.9em;
+            top: 20%
+            
+        }
+
+        .singlePictureBoxTitle2 {
+            position: absolute;
+            top: 60%;
+            left: 55%;
+            width: 240px;
+            color: white;
+            background-color: #00A692;
+            padding: 15px;
+            font-size: 0.5em;
+        }
+
+        .contactButton{
+            position: absolute;
+            top: 70%;
+            left: 80%;
+            width: 80px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            background-color: #36CE00;
+            padding: 10px;
+            font-size: 0.5em;
+        }
+    }
     `
 
 

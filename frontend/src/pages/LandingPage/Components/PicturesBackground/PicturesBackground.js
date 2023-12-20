@@ -18,9 +18,9 @@ const PicturesBackgroung = () => {
 
     const [ position1, setPosition1] = useState ([0,0])
     const [ position2, setPosition2] = useState ([20,0])
-    const [ position3, setPosition3] = useState ([])
-    const [ position4, setPosition4] = useState ([])
-    const [ position5, setPosition5] = useState ([])
+    const [ position3, setPosition3] = useState ([40,0])
+    const [ position4, setPosition4] = useState ([60,0])
+    const [ position5, setPosition5] = useState ([80,0])
     
     useEffect( () => {
 
@@ -231,7 +231,14 @@ const PicturesBackgroung = () => {
             <div className="singlePictureBox2" style={containerStyle2}></div>
             <div className="singlePictureBox3" style={containerStyle3}></div>   
             <div className="singlePictureBox4" style={containerStyle4}></div>     
-            <div className="singlePictureBox5" style={containerStyle5}></div>   
+            <div className="singlePictureBox5" style={containerStyle5}></div>
+            <div className="singlePictureTitleBox">
+                <div className="singlePictureBoxTitle1" >Join the journey and discover new cultures, beautiful landscapes, make connections, enlarge your horizont and take your time</div>
+                <div className="singlePictureBoxTitle2"> For more info read below and do not hesitate to contact </div>
+                <button className="contactButton">Contact</button>   
+            </div>
+
+
         </PictureBox>
         )
 }
