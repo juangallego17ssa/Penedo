@@ -1,6 +1,12 @@
+import AboutMeBox from "./Components/AboutMe/AboutMe.js";
 import AboutTripBox from "./Components/AboutTrip/AboutTrip.js";
+import ContactBox from "./Components/Contact/Contact.js";
+import DatePricingBox from "./Components/DatePricing/DatePrincing.js";
+import ExtraBox from "./Components/Extra/Extra.js";
+import ItiniraryBox from "./Components/Itinirary/Itinirary.js";
 import NavBar from "./Components/NavBar/NavBar.js";
 import PicturesBackgroung from "./Components/PicturesBackground/PicturesBackground.js";
+import WeahterBox from "./Components/Weather/Weather.js";
 import { Title11, Title12 } from "./LandingPage.style.js";
 
 const LandingPage = () => {
@@ -11,6 +17,13 @@ const LandingPage = () => {
       <Title12>A rich and diverse and unexplored region of the country</Title12>
       <PicturesBackgroung></PicturesBackgroung>
       <AboutTripBox></AboutTripBox>
+      <AboutMeBox></AboutMeBox>
+      <ItiniraryBox></ItiniraryBox>
+      <DatePricingBox></DatePricingBox>
+      <ContactBox></ContactBox>
+      <WeahterBox></WeahterBox>
+      <ExtraBox></ExtraBox>
+
     </>
   );
 };
