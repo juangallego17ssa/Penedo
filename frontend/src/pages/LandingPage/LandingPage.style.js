@@ -8,10 +8,11 @@ export const Title11 = styled.div`
     align-items:center;
     justify-content: flex-end;
     padding-bottom: 10px;
-    font-size: 4vh;
+    font-size: clamp(20px, 3vw, 32px);
     font-weight: bold;
     background:white;
     font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
 
 `
 
@@ -24,7 +25,7 @@ export const Title12 = styled.div`
     background:white;
     justify-content: flex-start;
     font-family: 'Inter', sans-serif;
-    font-size: 3vh;
-    letter-spacing: 2px;
+    font-size: clamp(16px, 2vw, 24px);
+    letter-spacing: 3px;
 
 `

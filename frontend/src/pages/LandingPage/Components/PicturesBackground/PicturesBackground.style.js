@@ -16,6 +16,7 @@ export const PictureBox = styled.div`
     position: relative;
     background-color: gray;
     z-index:-3;
+    overflow: hidden;
 
     .singlePictureBox1 {
         width: 20%;
@@ -65,42 +66,77 @@ export const PictureBox = styled.div`
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+
+        .singlePictureBoxTitle1Box{
+        
+            height: 60%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        
+            .singlePictureBoxTitle1 {
+                position: absolute;
+                color: white;
+                width: 75%;
+                font-size: clamp(20px, 2.5vw, 32px);
+                top: 20%;
+                font-weight: 400;
+                letter-spacing: 2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+        }
+
+        .singlePictureBoxTitle2Box{
+
+            width: 100%;
+            height: 40%;
+
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
 
 
 
-        .singlePictureBoxTitle1 {
-            position: absolute;
-            color: white;
-            width: 75%;
-            font-size: 0.9em;
-            top: 20%
+            .singlePictureBoxTitle2 {
+                position: absolute;
+                top: 0%;
+                left: 50%;
+                width: 25%;
+                min-width: 300px;
+                color: white;
+                background-color: #00A692;
+                padding: 12px;
+                font-size: clamp(12px, 1.5vw, 32px);
+                border-radius: 6px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                
+                box-sizing: border-box;
+
+                text-align: left;
+                
+                .contactButton{
+                    top: 70%;
+                    left: 80%;
+                    width: 80px;
+                    
+                    border-radius: 5px;
+                    border: none;
+                    color: white;
+                    background-color: #36CE00;
+                    padding: 10px;
+                    font-size: 0.5em;
+                }
+
+            }
+    
             
-        }
-
-        .singlePictureBoxTitle2 {
-            position: absolute;
-            top: 60%;
-            left: 55%;
-            width: 240px;
-            color: white;
-            background-color: #00A692;
-            padding: 15px;
-            font-size: 0.5em;
-        }
-
-        .contactButton{
-            position: absolute;
-            top: 70%;
-            left: 80%;
-            width: 80px;
-            border-radius: 5px;
-            border: none;
-            color: white;
-            background-color: #36CE00;
-            padding: 10px;
-            font-size: 0.5em;
         }
     }
     `

@@ -16,11 +16,46 @@ const PicturesBackgroung = () => {
     const arrayAllImages = [edificio,frevo,ferry,itaparica, rio, tartaruga, campo, padre]
 
 
+
     const [ position1, setPosition1] = useState ([0,0])
     const [ position2, setPosition2] = useState ([20,0])
     const [ position3, setPosition3] = useState ([40,0])
     const [ position4, setPosition4] = useState ([60,0])
     const [ position5, setPosition5] = useState ([80,0])
+
+
+
+    const [numberPictures, setNumberPictures] = useState(5);
+
+    useEffect(() => {
+      const handleResize = () => {
+        // Adjust the width threshold based on your requirements
+        if (window.innerWidth >= 1250){
+            setNumberPictures(6);
+        } else if (window.innerWidth >= 1000){
+            setNumberPictures(5);
+        } else if (window.innerWidth >= 750){
+            setNumberPictures(4);
+        } else if (window.innerWidth >= 500){
+            setNumberPictures(3);
+        } else if (window.innerWidth >= 250){
+            setNumberPictures(2);
+        } else {
+            setNumberPictures(1);
+        }
+      };
+  
+      // Initial setup
+      handleResize();
+  
+      // Add event listener for window resize
+      window.addEventListener('resize', handleResize);
+  
+      // Clean up the event listener on component unmount
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
     
     useEffect( () => {
 
@@ -227,15 +262,21 @@ const PicturesBackgroung = () => {
     return (
         
         <PictureBox top1={position1[1]+"%"} left1={position1[0]+"%"} top2={position2[1]+"%"} left2={position2[0]+"%"} top3={position3[1]+"%"} left3={position3[0]+"%"} top4={position4[1]+"%"} left4={position4[0]+"%"} top5={position5[1]+"%"} left5={position5[0]+"%"}>
+            
             <div className="singlePictureBox1" style={containerStyle1}></div>
             <div className="singlePictureBox2" style={containerStyle2}></div>
             <div className="singlePictureBox3" style={containerStyle3}></div>   
             <div className="singlePictureBox4" style={containerStyle4}></div>     
             <div className="singlePictureBox5" style={containerStyle5}></div>
+
             <div className="singlePictureTitleBox">
-                <div className="singlePictureBoxTitle1" >Join the journey and discover new cultures, beautiful landscapes, make connections, enlarge your horizont and take your time</div>
-                <div className="singlePictureBoxTitle2"> For more info read below and do not hesitate to contact </div>
-                <button className="contactButton">Contact</button>   
+                <div className="singlePictureBoxTitle1Box">
+                    <div className="singlePictureBoxTitle1" >Join the journey and discover new cultures, beautiful landscapes, make connections, enlarge your horizont and take your time</div>
+                </div>
+                <div className="singlePictureBoxTitle2Box">
+                    <div className="singlePictureBoxTitle2"> For more info read below and do not hesitate to contact </div>
+                    <button className="contactButton">Contact</button>   
+                </div>
             </div>
 
 

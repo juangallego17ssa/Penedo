@@ -3,7 +3,7 @@ import AboutTripBox from "./Components/AboutTrip/AboutTrip.js";
 import ContactBox from "./Components/Contact/Contact.js";
 import DatePricingBox from "./Components/DatePricing/DatePrincing.js";
 import ExtraBox from "./Components/Extra/Extra.js";
-import ItiniraryBox from "./Components/Itinirary/Itinirary.js";
+import ItineraryBox from "./Components/Itinerary/Itinerary.js";
 import NavBar from "./Components/NavBar/NavBar.js";
 import PicturesBackgroung from "./Components/PicturesBackground/PicturesBackground.js";
 import WeahterBox from "./Components/Weather/Weather.js";
@@ -18,7 +18,7 @@ const LandingPage = () => {
       <PicturesBackgroung></PicturesBackgroung>
       <AboutTripBox></AboutTripBox>
       <AboutMeBox></AboutMeBox>
-      <ItiniraryBox></ItiniraryBox>
+      <ItineraryBox></ItineraryBox>
       <DatePricingBox></DatePricingBox>
       <ContactBox></ContactBox>
       <WeahterBox></WeahterBox>
