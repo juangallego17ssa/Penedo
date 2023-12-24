@@ -106,9 +106,11 @@ export const PictureBox = styled.div`
             .singlePictureBoxTitle2 {
                 position: absolute;
                 top: 0%;
-                left: 50%;
+                left: ${props => (props.myScreenWidth-280-(props.myScreenWidth-280)*0.4)+"px"};
                 width: 25%;
-                min-width: 300px;
+                min-width: 280px;
+
+
                 color: white;
                 background-color: #00A692;
                 padding: 12px;
@@ -116,22 +118,39 @@ export const PictureBox = styled.div`
                 border-radius: 6px;
                 font-weight: 400;
                 letter-spacing: 1px;
-                
-                box-sizing: border-box;
-
                 text-align: left;
-                
-                .contactButton{
-                    top: 70%;
-                    left: 80%;
-                    width: 80px;
+
+                .text{
+                    width:100%;
+                    height:100%;
+                    color: white;
+                    background-color: #00A692;
+                    padding: 12px;
+                    font-size: clamp(12px, 1.5vw, 32px);
+                    border-radius: 6px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
                     
+                    box-sizing: border-box;
+
+                    text-align: left;
+                }
+
+                .contactButton{
+                    position: absolute;
+                    top: 80%;
+                    left: 85%;
+
+
+                    width: 90px;
+                    
+
                     border-radius: 5px;
                     border: none;
                     color: white;
                     background-color: #36CE00;
                     padding: 10px;
-                    font-size: 0.5em;
+                    font-size: 0.9em;
                 }
 
             }

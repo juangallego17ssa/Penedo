@@ -26,10 +26,13 @@ const PicturesBackgroung = () => {
 
 
     const [numberPictures, setNumberPictures] = useState(5);
+    const [screeWidth, setScreenWidth] = useState(window.innerWidth);
 
     useEffect(() => {
       const handleResize = () => {
         // Adjust the width threshold based on your requirements
+        setScreenWidth(Math.ceil(window.innerWidth/250))
+
         if (window.innerWidth >= 1250){
             setNumberPictures(6);
         } else if (window.innerWidth >= 1000){
@@ -43,6 +46,7 @@ const PicturesBackgroung = () => {
         } else {
             setNumberPictures(1);
         }
+        setScreenWidth(window.innerWidth)
       };
   
       // Initial setup
@@ -261,7 +265,7 @@ const PicturesBackgroung = () => {
     
     return (
         
-        <PictureBox top1={position1[1]+"%"} left1={position1[0]+"%"} top2={position2[1]+"%"} left2={position2[0]+"%"} top3={position3[1]+"%"} left3={position3[0]+"%"} top4={position4[1]+"%"} left4={position4[0]+"%"} top5={position5[1]+"%"} left5={position5[0]+"%"}>
+        <PictureBox myScreenWidth={screeWidth} top1={position1[1]+"%"} left1={position1[0]+"%"} top2={position2[1]+"%"} left2={position2[0]+"%"} top3={position3[1]+"%"} left3={position3[0]+"%"} top4={position4[1]+"%"} left4={position4[0]+"%"} top5={position5[1]+"%"} left5={position5[0]+"%"}>
             
             <div className="singlePictureBox1" style={containerStyle1}></div>
             <div className="singlePictureBox2" style={containerStyle2}></div>
@@ -274,8 +278,12 @@ const PicturesBackgroung = () => {
                     <div className="singlePictureBoxTitle1" >Join the journey and discover new cultures, beautiful landscapes, make connections, enlarge your horizont and take your time</div>
                 </div>
                 <div className="singlePictureBoxTitle2Box">
-                    <div className="singlePictureBoxTitle2"> For more info read below and do not hesitate to contact </div>
-                    <button className="contactButton">Contact</button>   
+                    <div className="singlePictureBoxTitle2">For more info read below and do not hesitate to contact
+                        {/* <div className="text">For more info read below and do not hesitate to contact</div> */}
+                        <button className="contactButton">Contact</button>   
+                    </div>
+                    <div className="buttonBox"> 
+                    </div>
                 </div>
             </div>
 
