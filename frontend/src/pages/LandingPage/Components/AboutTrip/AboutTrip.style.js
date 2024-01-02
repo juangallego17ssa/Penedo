@@ -28,6 +28,7 @@ background-color: white;
             background-color: white;
             display: flex;
             flex-direction: column;
+            margin-top: 20px;
         
             .divTextTitle {
                 margin-top: 30px;
@@ -45,7 +46,10 @@ background-color: white;
             }
 
             .divTextContent {
-
+                margin-top: 20px;
+                text-align: justify;
+                width: 85%;
+                font-size: 20px;
             }
     
         }
@@ -56,12 +60,19 @@ background-color: white;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 30px;
 
 
         .aboutBottomTitle{
             display: flex;
             width: 100%;
             justify-content: flex-start;
+            font-size: 26px;
+            font-weight: 600;
+            text-indent: 50px;
+            margin-bottom: 20px;
+            margin-top:30px;
+            color: #3E3E3E;
             
         }
 
@@ -69,7 +80,42 @@ background-color: white;
             display: flex;
             flex-direction:column;
             align-items: flex-start;
-            width: 300px;
+            width: 60%;
+
+
+            .aboutBottomElementList{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-align: left;
+                align-items: center;
+                margin-top: 15px;
+
+
+                .thumbUp{
+                    height:60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .aboutBottomElementListText{
+                    display: flex;
+
+                    margin-left: 20px;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: left;
+                    color: rgb(255,199,17);
+                    font-size: 30px;
+                    font-weight: 700;
+
+                }
+
+
+            }
+
+
 
 
         }

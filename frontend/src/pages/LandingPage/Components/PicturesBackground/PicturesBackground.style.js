@@ -18,45 +18,36 @@ export const PictureBox = styled.div`
     z-index:-3;
     overflow: hidden;
 
-    .singlePictureBox1 {
-        width: 20%;
+    .singlePictureBox{
+        width: ${props => 100/props.myNumberPictures + "%"};
         height: 100%;
         position: absolute;
+        z-index: -2;
+    }
+
+    .singlePictureBox1 {
         top: ${props => props.top1};
         left: ${props => props.left1};
-        z-index: -2;
     }
     .singlePictureBox2 {
-        width: 20%;
-        height: 100%;
-        position: absolute;
         top: ${props => props.top2};
-        left: ${props => props.left2 || "20%"};
-        z-index: -2;
+        left: ${props => props.left2};
     }
     .singlePictureBox3 {
-        width: 20%;
-        height: 100%;
-        position: absolute;
         top: ${props => props.top3};
         left: ${props => props.left3};
-        z-index: -2;
     }
     .singlePictureBox4 {
-        width: 20%;
-        height: 100%;
-        position: absolute;
         top: ${props => props.top4};
         left: ${props => props.left4};
-        z-index: -2;
     }
     .singlePictureBox5 {
-        width: 20%;
-        height: 100%;
-        position: absolute;
         top: ${props => props.top5};
         left: ${props => props.left5};
-        z-index: -2;
+    }
+    .singlePictureBox6 {
+        top: ${props => props.top6};
+        left: ${props => props.left6};
     }
 
 

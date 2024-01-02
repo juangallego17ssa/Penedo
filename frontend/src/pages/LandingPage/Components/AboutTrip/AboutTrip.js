@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { AboutTrip } from "./AboutTrip.style"
 import frevo from "../../../../assets/frevo.jpg"
+import thumb from "../../../../assets/thumb up.png"
 
 
 
@@ -67,12 +68,12 @@ return (
         </div>
       </div>
       <div className="divAboutBottom">
-        <div className="aboutBottomTitle">You better suit the group if you...</div>
+        <div className="aboutBottomTitle">You better suit the group if...</div>
         <div className="aboutBottomList">
-          <ul>You want to travel in a small selected group</ul>
-          <ul>You would like to get to know Brazil from a new perspective</ul>
-          <ul>You are eclectic and like city, beach, nature</ul>
-          <ul>You are willing to meet new interesting people</ul>
+          <div className="aboutBottomElementList"><img className="thumbUp" src={thumb}></img><div className="aboutBottomElementListText">You want to travel in a small selected group</div></div>
+          <div className="aboutBottomElementList"><img className="thumbUp" src={thumb}></img><div className="aboutBottomElementListText">You would like to get to know Brazil from a new perspective</div></div>
+          <div className="aboutBottomElementList"><img className="thumbUp" src={thumb}></img><div className="aboutBottomElementListText">You are eclectic and like city, beach, nature</div></div>
+          <div className="aboutBottomElementList"><img className="thumbUp" src={thumb}></img><div className="aboutBottomElementListText">You are willing to meet new interesting people</div></div>
         </div>
       </div>
 
