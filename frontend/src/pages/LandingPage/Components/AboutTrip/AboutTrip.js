@@ -66,14 +66,14 @@ return (
   How many person. Bus
   You get a general overview of our culture and history, discover our nature and geography, experience Brazilian lifestyle, taste new flavors, immerse in our music, and most importantly as a traveler: to see life from a different perspective.</div>
         </div>
-      </div>
-      <div className="divAboutBottom">
-        <div className="aboutBottomTitle">You better suit the group if...</div>
-        <div className="aboutBottomList">
-          <div className="aboutBottomElementList"><img className="thumbUp" src={thumb}></img><div className="aboutBottomElementListText">You want to travel in a small selected group</div></div>
-          <div className="aboutBottomElementList"><img className="thumbUp" src={thumb}></img><div className="aboutBottomElementListText">You would like to get to know Brazil from a new perspective</div></div>
-          <div className="aboutBottomElementList"><img className="thumbUp" src={thumb}></img><div className="aboutBottomElementListText">You are eclectic and like city, beach, nature</div></div>
-          <div className="aboutBottomElementList"><img className="thumbUp" src={thumb}></img><div className="aboutBottomElementListText">You are willing to meet new interesting people</div></div>
+        <div className="divAboutBottom">
+          <div className="aboutBottomTitle">You better suit the group if...</div>
+          <div className="aboutBottomList">
+            <div className="aboutBottomElementList"><img className="thumbUp" src={thumb}></img><div className="aboutBottomElementListText">You want to travel in a small selected group</div></div>
+            <div className="aboutBottomElementList"><img className="thumbUp" src={thumb}></img><div className="aboutBottomElementListText">You would like to get to know Brazil from a new perspective</div></div>
+            <div className="aboutBottomElementList"><img className="thumbUp" src={thumb}></img><div className="aboutBottomElementListText">You are eclectic and like city, beach, nature</div></div>
+            <div className="aboutBottomElementList"><img className="thumbUp" src={thumb}></img><div className="aboutBottomElementListText">You are willing to meet new interesting people</div></div>
+          </div>
         </div>
       </div>
 

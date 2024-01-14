@@ -56,7 +56,7 @@ const PicturesBackgroung = () => {
         let newArrayImages=[]
         let oldArrayImages=[...arrayAllImages]
         
-        for(let i=0;i<5;i++){
+        for(let i=0;i<6;i++){
             let position = Math.floor(Math.random() * (oldArrayImages.length-1))
             newArrayImages.push(oldArrayImages[position])
             oldArrayImages.splice(position, 1);
@@ -76,165 +76,165 @@ const PicturesBackgroung = () => {
 
 
         setArrayImages(newArrayImages)
-        const intervalId = setInterval(() => {
+        // const intervalId = setInterval(() => {
             
-            let newArrayImages=[]
-            let oldArrayImages=[...arrayAllImages]
+        //     let newArrayImages=[]
+        //     let oldArrayImages=[...arrayAllImages]
 
-            for(let i=0;i<numberPictures;i++){
-                let position = Math.floor(Math.random() * (oldArrayImages.length))
-                newArrayImages.push(oldArrayImages[position])
-                oldArrayImages.splice(position, 1);
-            }
-            setArrayImages(newArrayImages)
-
-
-
-
-            if ((Math.floor(Math.random()*2))==0) {
-                // px1 = (Math.floor(Math.random()*2))==0 ? -20 : 100
-                px1 = -20
-                py1 = 0
-            } else {
-                py1 = (Math.floor(Math.random()*2))==0 ? -100 : 100
-                px1 = 0
-            }
-            setPosition1([ [px1, py1]])
-
-            if ((Math.floor(Math.random()*2))==0) {
-                // px2 = (Math.floor(Math.random()*2))==0 ? -20 : 100
-                px2 = -20
-                py2 = 0
-            } else {
-                py2 = (Math.floor(Math.random()*2))==0 ? -100 : 100
-                px2 = 100/numberPictures
-            }
-            setPosition2([ [px2, py2]])
-
-            if ((Math.floor(Math.random()*2))==0) {
-                px3 = (Math.floor(Math.random()*2))==0 ? -20 : 100
-                py3 = 0
-            } else {
-                py3 = (Math.floor(Math.random()*2))==0 ? -100 : 100
-                px3 = 200/numberPictures
-            }
-            setPosition3([ [px3, py3]])
-
-            if ((Math.floor(Math.random()*2))==0) {
-                // px4 = (Math.floor(Math.random()*2))==0 ? -20 : 100
-                px4 = 100
-                py4 = 0
-            } else {
-                py4 = (Math.floor(Math.random()*2))==0 ? -100 : 100
-                px4 = 300/numberPictures
-            }
-            setPosition4([ [px4, py4]])
-
-            if ((Math.floor(Math.random()*2))==0) {
-                // px5 = (Math.floor(Math.random()*2))==0 ? -20 : 100
-                px5 = 100
-                py5 = 0
-            } else {
-                py5 = (Math.floor(Math.random()*2))==0 ? -100 : 100
-                px5 = 400/numberPictures
-            }
-            setPosition5([ [px5, py5]])
-
-            if ((Math.floor(Math.random()*2))==0) {
-                // px5 = (Math.floor(Math.random()*2))==0 ? -20 : 100
-                px6 = 100
-                py6 = 0
-            } else {
-                py6 = (Math.floor(Math.random()*2))==0 ? -100 : 100
-                px6 = 500/numberPictures
-            }
-            setPosition6([ [px6, py6]])
-
-        }, 8000);
-
-        const intervalId2 = setInterval(() => {
-
-            if(px1<0){
-                px1 = px1 + 1
-            } else if(px1>0) {
-                px1 = px1 - 1
-            }
-            if(py1<0){
-                py1 = py1 + 2
-            } else if(py1>0) {
-                py1 = py1 - 2
-            }
-            setPosition1([ px1, py1])
-
-            if(px2<100/numberPictures){
-                px2 = px2 + 1
-            } else if(px2>100/numberPictures) {
-                px2 = px2 - 1
-            }
-            if(py2<0){
-                py2 = py2 + 2
-            } else if(py2>0) {
-                py2 = py2 - 2
-            }
-            setPosition2([ px2, py2])
-
-            if(px3<200/numberPictures){
-                px3 = px3 + 2
-            } else if(px3>200/numberPictures) {
-                px3 = px3 - 2
-            }
-            if(py3<0){
-                py3 = py3 + 2
-            } else if(py3>0) {
-                py3 = py3 - 2
-            }
-            setPosition3([ px3, py3])
-
-            if(px4<300/numberPictures){
-                px4 = px4 + 1
-            } else if(px4>300/numberPictures) {
-                px4 = px4 - 1
-            }
-            if(py4<0){
-                py4 = py4 + 2
-            } else if(py4>0) {
-                py4 = py4 - 2
-            }
-            setPosition4([ px4, py4])
-
-            if(px5<400/numberPictures){
-                px5 = px5 + 1
-            } else if(px5>400/numberPictures) {
-                px5 = px5 - 1
-            }
-            if(py5<0){
-                py5 = py5 + 2
-            } else if(py5>0) {
-                py5 = py5 - 2
-            }
-            setPosition5([ px5, py5])
-
-            if(px6<500/numberPictures){
-                px6 = px6 + 1
-            } else if(px6>500/numberPictures) {
-                px6 = px6 - 1
-            }
-            if(py6<0){
-                py6 = py6 + 2
-            } else if(py6>0) {
-                py6 = py6 - 2
-            }
-            setPosition6([ px6, py6])
+        //     for(let i=0;i<numberPictures;i++){
+        //         let position = Math.floor(Math.random() * (oldArrayImages.length))
+        //         newArrayImages.push(oldArrayImages[position])
+        //         oldArrayImages.splice(position, 1);
+        //     }
+        //     setArrayImages(newArrayImages)
 
 
 
-        },40);
+
+        //     if ((Math.floor(Math.random()*2))==0) {
+        //         // px1 = (Math.floor(Math.random()*2))==0 ? -20 : 100
+        //         px1 = -20
+        //         py1 = 0
+        //     } else {
+        //         py1 = (Math.floor(Math.random()*2))==0 ? -100 : 100
+        //         px1 = 0
+        //     }
+        //     setPosition1([ [px1, py1]])
+
+        //     if ((Math.floor(Math.random()*2))==0) {
+        //         // px2 = (Math.floor(Math.random()*2))==0 ? -20 : 100
+        //         px2 = -20
+        //         py2 = 0
+        //     } else {
+        //         py2 = (Math.floor(Math.random()*2))==0 ? -100 : 100
+        //         px2 = 100/numberPictures
+        //     }
+        //     setPosition2([ [px2, py2]])
+
+        //     if ((Math.floor(Math.random()*2))==0) {
+        //         px3 = (Math.floor(Math.random()*2))==0 ? -20 : 100
+        //         py3 = 0
+        //     } else {
+        //         py3 = (Math.floor(Math.random()*2))==0 ? -100 : 100
+        //         px3 = 200/numberPictures
+        //     }
+        //     setPosition3([ [px3, py3]])
+
+        //     if ((Math.floor(Math.random()*2))==0) {
+        //         // px4 = (Math.floor(Math.random()*2))==0 ? -20 : 100
+        //         px4 = 100
+        //         py4 = 0
+        //     } else {
+        //         py4 = (Math.floor(Math.random()*2))==0 ? -100 : 100
+        //         px4 = 300/numberPictures
+        //     }
+        //     setPosition4([ [px4, py4]])
+
+        //     if ((Math.floor(Math.random()*2))==0) {
+        //         // px5 = (Math.floor(Math.random()*2))==0 ? -20 : 100
+        //         px5 = 100
+        //         py5 = 0
+        //     } else {
+        //         py5 = (Math.floor(Math.random()*2))==0 ? -100 : 100
+        //         px5 = 400/numberPictures
+        //     }
+        //     setPosition5([ [px5, py5]])
+
+        //     if ((Math.floor(Math.random()*2))==0) {
+        //         // px5 = (Math.floor(Math.random()*2))==0 ? -20 : 100
+        //         px6 = 100
+        //         py6 = 0
+        //     } else {
+        //         py6 = (Math.floor(Math.random()*2))==0 ? -100 : 100
+        //         px6 = 500/numberPictures
+        //     }
+        //     setPosition6([ [px6, py6]])
+
+        // }, 8000);
+
+        // const intervalId2 = setInterval(() => {
+
+        //     if(px1<0){
+        //         px1 = px1 + 1
+        //     } else if(px1>0) {
+        //         px1 = px1 - 1
+        //     }
+        //     if(py1<0){
+        //         py1 = py1 + 2
+        //     } else if(py1>0) {
+        //         py1 = py1 - 2
+        //     }
+        //     setPosition1([ px1, py1])
+
+        //     if(px2<100/numberPictures){
+        //         px2 = px2 + 1
+        //     } else if(px2>100/numberPictures) {
+        //         px2 = px2 - 1
+        //     }
+        //     if(py2<0){
+        //         py2 = py2 + 2
+        //     } else if(py2>0) {
+        //         py2 = py2 - 2
+        //     }
+        //     setPosition2([ px2, py2])
+
+        //     if(px3<200/numberPictures){
+        //         px3 = px3 + 2
+        //     } else if(px3>200/numberPictures) {
+        //         px3 = px3 - 2
+        //     }
+        //     if(py3<0){
+        //         py3 = py3 + 2
+        //     } else if(py3>0) {
+        //         py3 = py3 - 2
+        //     }
+        //     setPosition3([ px3, py3])
+
+        //     if(px4<300/numberPictures){
+        //         px4 = px4 + 1
+        //     } else if(px4>300/numberPictures) {
+        //         px4 = px4 - 1
+        //     }
+        //     if(py4<0){
+        //         py4 = py4 + 2
+        //     } else if(py4>0) {
+        //         py4 = py4 - 2
+        //     }
+        //     setPosition4([ px4, py4])
+
+        //     if(px5<400/numberPictures){
+        //         px5 = px5 + 1
+        //     } else if(px5>400/numberPictures) {
+        //         px5 = px5 - 1
+        //     }
+        //     if(py5<0){
+        //         py5 = py5 + 2
+        //     } else if(py5>0) {
+        //         py5 = py5 - 2
+        //     }
+        //     setPosition5([ px5, py5])
+
+        //     if(px6<500/numberPictures){
+        //         px6 = px6 + 1
+        //     } else if(px6>500/numberPictures) {
+        //         px6 = px6 - 1
+        //     }
+        //     if(py6<0){
+        //         py6 = py6 + 2
+        //     } else if(py6>0) {
+        //         py6 = py6 - 2
+        //     }
+        //     setPosition6([ px6, py6])
 
 
-        return () => {
-            clearInterval(intervalId)
-            clearInterval(intervalId2)
-        };
+
+        // },40);
+
+
+        // return () => {
+        //     clearInterval(intervalId)
+        //     clearInterval(intervalId2)
+        // };
     }, []);
 
 

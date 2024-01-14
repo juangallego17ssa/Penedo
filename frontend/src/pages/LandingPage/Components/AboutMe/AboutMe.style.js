@@ -9,11 +9,15 @@ z-index:0;
 display: flex;
 width: 100%;
 background-color: white;
+align-items: center;
+justify-content: center;
 
     .divAboutTop{
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin-left:30px;
+        max-width: 1200px;
 
 
         
@@ -34,9 +38,29 @@ background-color: white;
 
             .divTextContent {
 
-                background-color: #C2C0F6;
-                margin: 40px;
-                padding: 30px;
+                display: flex;
+                position: relative;
+                
+                
+                .textMe{
+                    background-color: #C2C0F6;
+                    margin: 60px;
+                    margin-left: 250px;
+                    padding: 30px;
+                    padding-left: 70px;
+                    font-size: 20px;
+                    align-items: flex-start;
+                    text-align: left;
+                    position: relative;
+
+                                    .imageMe{
+                                        position: absolute;
+                                        left: -200px;
+                                        top: 0px;
+                                        width: 250px;
+                                        height: 250px;
+                                    }
+                }
 
             }
     
@@ -45,6 +69,7 @@ background-color: white;
         .divAboutRight{ 
             width: 200px;
             background-color: blue;
+
 
         }
 

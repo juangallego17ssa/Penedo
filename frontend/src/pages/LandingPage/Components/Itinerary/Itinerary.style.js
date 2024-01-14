@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import nordeste from "../../../../assets/nordeste.png"
+import destination_gray from "../../../../assets/destination_gray.png"
 
 
 
@@ -14,16 +15,59 @@ export const Itinerary = styled.div`
         width: 25%;
         max-width: 500px;
         min-width: 200px;
-        aspect-ratio: 5 / 9;
 
-        .itineraryImg{
-    
-            background-image: url(${nordeste});
-            background-size: cover;
-            background-position: right ;
-            height: 100%;
-            width: 100%;
-    
+        .itineraryImgBox{
+
+            position: relative;
+
+            .itineraryImg{
+                width: 100%;
+                height: auto;
+            }
+
+
+            .destination{
+                position: absolute;
+                width: 4.5%;
+            }
+        
+            .salvador{
+                top: 66.3%;
+                left: 55.2%;
+            }
+            .lago{
+                top: 63.8%;
+                left: 59.2%;
+            }
+            .esplanada{
+                top: 61.0%;
+                left: 61.5%;
+            }
+            .canudos{
+                top: 52.6%;
+                left: 39.2%;
+            }
+            .piranhas{
+                top: 46.6%;
+                left: 58.2%;
+            }
+            .penedo{
+                top: 47.0%;
+                left: 65.8%;
+            }
+            .praia{
+                top: 50.6%;
+                left: 82.2%;
+            }
+            .palmares{
+                top: 45.6%;
+                left: 84.2%;
+            }
+            .recife{
+                top: 39.6%;
+                left: 95.2%;
+            }
+            
         }
     }
 
